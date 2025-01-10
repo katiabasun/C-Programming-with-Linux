@@ -1,5 +1,21 @@
 #include <stdio.h>
 int main(void){
-  printf("Hello, World");
+  printf("Hello, World!");
+  return 0;
+}
+
+#include <stdio.h>
+int main(void){
+  printf("Hello, World!\n");
+  printf("Have fun with this course!");
+  return 0;
+}
+
+#include <stdio.h>
+int main(void){
+  printf("I already know how to:\n");
+  printf("- Print text to the screen.\n");
+  printf("- Start a new line.\n");
+  printf("- Fix errors.");
   return 0;
 }

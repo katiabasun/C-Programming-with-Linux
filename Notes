@@ -1,0 +1,32 @@
+%d to declare a number, example:
+
+#include <stdio.h>
+int main(void){
+    printf("If I have %d bills worth %d dollars each then I have %d dollars.",3,5,15);
+    return 0;
+}
+
+Store integers in variables
+
+#include <stdio.h>
+int main(void) {
+    //Create a variable to store an integer value
+    int age;
+    //Assigne a value to that variable
+    age = 17;
+ printf("I am %d years old.\n", age);
+
+when i declare a variable i have to give it a definition!
+DECLARATION and DEFINITION
+    int balance = 50;
+
+The list below has the keywords reserved by the C language. When the current programming language is C or C++, these keywords cannot be abbreviated, used as variable names, or used as any other type of identifiers.
+auto else long switch
+break enum register typedef
+case extern return union
+char float short unsigned
+const for signed void
+continue goto sizeof volatile
+default if static while
+do int struct _Packed
+double 

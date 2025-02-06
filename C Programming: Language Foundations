@@ -99,3 +99,25 @@ int main() {
 
 
 
+
+#include <stdio.h>
+int main() {
+    int n, i;
+    double weight[50], total = 0.0, averg;
+    
+    scanf("%d", &n);
+    for (i = 0; i<n; i++) {
+        scanf("%lf", &weight[i]);
+        total += weight[i];
+    }
+    averg = total / n;
+    
+    for (i = 0; i < n; i++) {
+        printf("%.1lf\n", averg - weight[i]);
+    }
+    
+    return 0;
+}
+
+
+

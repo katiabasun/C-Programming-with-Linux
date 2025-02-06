@@ -83,3 +83,19 @@ int main() {
 
 
 
+#include <stdio.h>
+int main() {
+    int ingridients[10];
+    int id;
+    int i;
+    
+    for(i = 0; i < 10; i++) {
+        scanf("%d", &ingridients[i]);
+    }
+    scanf("%d", &id);
+    printf("%d\n", ingridients[id]);
+    return 0;
+}
+
+
+

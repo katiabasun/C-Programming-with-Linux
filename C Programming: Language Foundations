@@ -121,3 +121,27 @@ int main() {
 
 
 
+#include <stdio.h>
+int main() {
+    int i, n;
+    double prices[10], weights[10], totalCost = 0.0;
+    
+    scanf("%d", &n);
+    if (n > 10) {
+        return 1;
+    }
+    
+    for (i = 0; i < n; i++) {
+        scanf("%lf", &prices[i]);
+    }
+    for (i = 0; i < n; i++) {
+        scanf("%lf", &weights[i]);
+        totalCost += prices[i] * weights[i];
+    }
+    printf("%.6lf\n", totalCost);
+    
+    return 0;
+}
+
+
+

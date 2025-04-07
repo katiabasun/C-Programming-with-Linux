@@ -1,0 +1,66 @@
+#include <stdio.h>
+
+double meters_to_feet(double m) {
+    return m * 3.2808;
+}
+double grams_to_pounds(double g) {
+    return g * 0.002205;
+}
+double celsius_to_fahrenheit(double c) {
+    return 32 + 1.8 * c;
+}
+
+int main(void) {
+    int n, i;
+    double value;
+    char unit;
+
+    scanf("%d", &n);
+
+    for (i = 0; i < n; i++) {
+        scanf("%lf %c", &value, &unit);
+
+        if (unit == 'm') {
+            printf("%.6f ft\n", meters_to_feet(value));
+        } else if (unit == 'g') {
+            printf("%.6f lbs\n", grams_to_pounds(value));
+        } else if (unit == 'c') {
+            printf("%.6f f\n", celsius_to_fahrenheit(value));
+        }
+    }
+
+    return 0;
+}
+
+
+
+
+
+
+#include <stdio.h>
+
+int min(int a, int b);
+
+int min(int a, int b) {
+    if (a < b)
+        return a;
+    else
+        return b;
+}
+
+int main(void) {
+    int n, i, number, current_min;
+
+    scanf("%d", &n);
+
+    scanf("%d", &current_min);
+
+    for (i = 1; i < n; i++) {
+        scanf("%d", &number);
+        current_min = min(current_min, number);
+    }
+
+    printf("%d", current_min);
+
+    return 0;
+}
